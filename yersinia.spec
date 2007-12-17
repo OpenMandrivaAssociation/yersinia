@@ -15,7 +15,6 @@ BuildRequires:	ncurses-devel
 BuildRequires:  libpcap-devel
 BuildRequires:  pkgconfig
 BuildRequires:  gtk2-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Yersinia is a network tool designed to take advantage of some weakeness in
