@@ -1,6 +1,6 @@
 %define	name	yersinia
 %define	version 0.7.1
-%define release %mkrel 1
+%define release %mkrel 3
 
 Name:		%{name}
 Version:	%{version}
