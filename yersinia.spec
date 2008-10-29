@@ -1,15 +1,11 @@
-%define	name	yersinia
-%define	version 0.7.1
-%define release %mkrel 5
-
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
 Summary:	Network pen-testing tool
+Name:		yersinia
+Version:	0.7.1
+Release:	%mkrel 5
 License: 	GPL
 Group: 		System/Servers
 Source:		http://www.yersinia.net/download/%{name}-%{version}.tar.bz2
-Url: 		http://www.yersinia.net
+URL: 		http://www.yersinia.net
 BuildRequires:	libnet1.1.2-devel
 BuildRequires:	ncurses-devel
 BuildRequires:  libpcap-devel
@@ -33,14 +29,19 @@ Currently, only attacks for the following network protocols are implemented:
 * VLAN Trunking Protocol (VTP).
 
 %prep
+
 %setup -q
 
 %build
-%configure
+
+%configure2_5x \
+    --with-pcap-includes=%{_includedir}/pcap
+
 %make
 
 %install
 rm -rf %{buildroot}
+
 %makeinstall_std
 
 %clean
@@ -51,4 +52,3 @@ rm -rf %{buildroot}
 %doc AUTHORS COPYING ChangeLog FAQ INSTALL README THANKS TODO
 %{_bindir}/*
 %{_mandir}/man8/*
-
