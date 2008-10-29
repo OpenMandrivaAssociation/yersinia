@@ -1,6 +1,6 @@
 %define	name	yersinia
 %define	version 0.7.1
-%define release %mkrel 4
+%define release %mkrel 5
 
 Name:		%{name}
 Version:	%{version}
@@ -15,7 +15,7 @@ BuildRequires:	ncurses-devel
 BuildRequires:  libpcap-devel
 BuildRequires:  pkgconfig
 BuildRequires:  gtk2-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Yersinia is a network tool designed to take advantage of some weakeness in
