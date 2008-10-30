@@ -1,16 +1,17 @@
 Summary:	Network pen-testing tool
 Name:		yersinia
-Version:	0.7.1
-Release:	%mkrel 5
+Version:	0.7.2
+Release:	%mkrel 0.20060323.1
 License: 	GPL
 Group: 		System/Servers
-Source:		http://www.yersinia.net/download/%{name}-%{version}.tar.bz2
+Source:		http://www.yersinia.net/download/%{name}-snapshot.tgz
 URL: 		http://www.yersinia.net
+BuildRequires:	gtk2-devel
 BuildRequires:	libnet1.1.2-devel
+BuildRequires:	libtool
 BuildRequires:	ncurses-devel
-BuildRequires:  libpcap-devel
-BuildRequires:  pkgconfig
-BuildRequires:  gtk2-devel
+BuildRequires:	pcap-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -30,9 +31,12 @@ Currently, only attacks for the following network protocols are implemented:
 
 %prep
 
-%setup -q
+%setup -q -n %{name}
 
 %build
+make distclean
+rm -f configure
+sh ./autogen.sh
 
 %configure2_5x \
     --with-pcap-includes=%{_includedir}/pcap
