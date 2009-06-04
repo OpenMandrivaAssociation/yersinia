@@ -1,13 +1,13 @@
 Summary:	Network pen-testing tool
 Name:		yersinia
 Version:	0.7.2
-Release:	%mkrel 0.20060323.1
+Release:	%mkrel 0.20060323.2
 License: 	GPL
 Group: 		System/Servers
 Source:		http://www.yersinia.net/download/%{name}-snapshot.tgz
 URL: 		http://www.yersinia.net
 BuildRequires:	gtk2-devel
-BuildRequires:	libnet1.1.2-devel
+BuildRequires:	net-devel >= 1.1.3
 BuildRequires:	libtool
 BuildRequires:	ncurses-devel
 BuildRequires:	pcap-devel
