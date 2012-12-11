@@ -56,3 +56,61 @@ rm -rf %{buildroot}
 %doc AUTHORS COPYING ChangeLog FAQ INSTALL README THANKS TODO
 %{_bindir}/*
 %{_mandir}/man8/*
+
+
+%changelog
+* Tue May 03 2011 Michael Scherer <misc@mandriva.org> 0.7.2-0.20060323.3mdv2011.0
++ Revision: 664861
+- mass rebuild
+
+* Thu Jun 04 2009 Oden Eriksson <oeriksson@mandriva.com> 0.7.2-0.20060323.2mdv2010.0
++ Revision: 382744
+- rebuilt against libnet 1.1.3
+
+* Thu Oct 30 2008 Oden Eriksson <oeriksson@mandriva.com> 0.7.2-0.20060323.1mdv2009.1
++ Revision: 298729
+- use the "latest" snapshot
+
+* Wed Oct 29 2008 Oden Eriksson <oeriksson@mandriva.com> 0.7.1-5mdv2009.1
++ Revision: 298633
+- fix build
+- rebuilt against libpcap-1.0.0
+
+* Mon Aug 04 2008 Thierry Vignaud <tv@mandriva.org> 0.7.1-4mdv2009.0
++ Revision: 262940
+- rebuild
+
+* Mon Aug 04 2008 Thierry Vignaud <tv@mandriva.org> 0.7.1-3mdv2009.0
++ Revision: 262797
+- rebuild
+
+* Thu Jan 03 2008 Olivier Blin <oblin@mandriva.com> 0.7.1-1mdv2008.1
++ Revision: 141006
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Thu Jul 26 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.7.1-1mdv2008.0
++ Revision: 56114
+- update to new version 0.7.1
+- import yersinia
+
+
+* Fri Jun 30 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.7-3mdv2007.0
+- buildrequires gtk2-devel
+
+* Fri Jun 23 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.7-2mdv2007.0
+- buildrequires pkgconfig
+
+* Thu Jun 22 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.7-1mdv2007.0
+- new version
+
+* Fri Mar 17 2006 Oden Eriksson <oeriksson@mandriva.com> 0.5.6-3mdk
+- rebuilt against libnet1.1.2
+
+* Mon Oct 10 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.5.6-2mdk
+- Fix BuildRequires
+
+* Tue Sep 20 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.5.6-1mdk
+- first mdk release
