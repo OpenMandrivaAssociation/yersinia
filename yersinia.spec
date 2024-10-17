@@ -5,7 +5,7 @@ Release:	0.20060323.4
 License: 	GPL
 Group: 		System/Servers
 Source:		http://www.yersinia.net/download/%{name}-snapshot.tgz
-URL: 		http://www.yersinia.net
+URL: 		https://www.yersinia.net
 BuildRequires:	gtk2-devel
 BuildRequires:	net-devel >= 1.1.3
 BuildRequires:	libtool
