@@ -6,6 +6,11 @@ License: 	GPL
 Group: 		System/Servers
 Source:		http://www.yersinia.net/download/%{name}-snapshot.tgz
 URL: 		https://www.yersinia.net
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gtk2-devel
 BuildRequires:	net-devel >= 1.1.3
 BuildRequires:	libtool
